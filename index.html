@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Jaya Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+    <div class="max-w-7xl mx-auto px-4 py-8">
+        <div class="flex justify-between items-center mb-12">
+            <div class="flex items-center">
+                <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg">TJ</div>
+                <div class="ml-2">
+                    <p class="text-gray-800 font-semibold">Travel Jaya</p>
+                    <p class="text-sm text-gray-500">by Arkatama Malang</p>
+                </div>
+            </div>
+            <a href="login.html" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">Login</a>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">
+                    Mudah, <span class="text-blue-600">Cepat</span>, dan Menyenangkan
+                </h1>
+                <p class="text-gray-600 mb-6">
+                    Rencanakan perjalanan Anda dengan mudah, dan biarkan kami mengurus sisanya.
+                </p>
+                <div class="flex space-x-4 mb-8">
+                    <a href="#" class="flex items-center bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800">
+                        <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15V9l5.2 3-5.2 3z"/></svg>
+                        Google Play
+                    </a>
+                    <a href="#" class="flex items-center bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800">
+                        <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M18.71 7.21a.996.996 0 0 0-1.41 0L12 11.59 6.71 6.29a.996.996 0 1 0-1.41 1.41L10.59 13l-5.29 5.29a.996.996 0 1 0 1.41 1.41L12 14.41l5.29 5.29c.39.39 1.02.39 1.41 0a.996.996 0 0 0 0-1.41L13.41 13l5.29-5.29c.4-.38.4-1.01 0-1.5z"/></svg>
+                        App Store
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 mt-8 md:mt-0">
+                <img src="image/busbiru.png" alt="Bus" class="w-full h-auto object-cover rounded-lg shadow-lg">
+            </div>
+        </div>
+        <div class="mt-12 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+            <div class="flex-1">
+                <label for="location" class="block text-gray-600 text-sm mb-1">Location</label>
+                <input type="text" id="location" placeholder="Search your location" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div class="flex-1">
+                <label for="pickup-date" class="block text-gray-600 text-sm mb-1">Pick up date</label>
+                <input type="date" id="pickup-date" value="2025-02-18" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div class="flex-1">
+                <label for="return-date" class="block text-gray-600 text-sm mb-1">Return date</label>
+                <input type="date" id="return-date" value="2025-02-19" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div class="flex items-end">
+                <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Search</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

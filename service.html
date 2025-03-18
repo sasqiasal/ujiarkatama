@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="flex h-screen">
+        <div class="w-16 bg-white shadow-md flex flex-col items-center py-4">
+            <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg mb-8">AK</div>
+            <a href="dashboard.html" class="text-gray-600 hover:text-blue-600 mb-4">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l9-6 9 6v12a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"></path></svg>
+            </a>
+            <a href="service.html" class="py-2 px-4 text-gray-600 hover:bg-gray-100 rounded-lg">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                </svg>
+            </a>
+            <a href="employe.html" class="py-2 px-4 text-gray-600 hover:bg-gray-100 rounded-lg">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-6-6H9a6 6 0 00-6 6v1"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="flex-1 p-6 overflow-y-auto">
+            <div class="mb-6">
+                <h1 class="text-xl font-semibold text-gray-800">Data Service</h1>
+                <p class="text-gray-600 text-sm">Welcome back!</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                    <p class="text-gray-600 text-sm">Quick Stats</p>
+                    <p class="text-2xl font-bold text-gray-800">28,345</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                    <p class="text-gray-600 text-sm">Pending Approval</p>
+                    <p class="text-2xl font-bold text-gray-800">120</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                    <p class="text-gray-600 text-sm">New Clients this month</p>
+                    <p class="text-2xl font-bold text-gray-800">89 <span class="text-green-500 text-sm font-normal">↑</span></p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                    <p class="text-gray-600 text-sm">Retention Rate</p>
+                    <p class="text-2xl font-bold text-gray-800">46% <span class="text-green-500 text-sm font-normal">↑</span></p>
+                </div>
+            </div>
+            <div class="mb-6">
+                <h2 class="text-lg font-semibold text-yellow-500 mb-2">My Service</h2>
+                <p class="text-gray-600 text-sm">list of all my service</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <p class="text-gray-600 text-sm">Trip to Malang</p>
+                    <p class="text-gray-800">20 Passenger</p>
+                    <p class="text-gray-600 text-sm">Departure Date</p>
+                    <p class="text-gray-800">25 Jul 2020</p>
+                    <p class="text-gray-600 text-sm">Time</p>
+                    <p class="text-gray-800">11:00</p>
+                    <div class="mt-2 flex space-x-2">
+                        <button id="openServiceModal1" class="bg-blue-100 text-blue-600 px-2 py-1 text-sm rounded">Add Passenger</button>
+                        <button class="bg-red-100 text-red-600 px-2 py-1 text-sm rounded">Close Quota</button>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <p class="text-gray-600 text-sm">Trip to Surabaya</p>
+                    <p class="text-gray-800">20 Passenger</p>
+                    <p class="text-gray-600 text-sm">Departure Date</p>
+                    <p class="text-gray-800">25 Jul 2020</p>
+                    <p class="text-gray-600 text-sm">Time</p>
+                    <p class="text-gray-800">11:00</p>
+                    <div class="mt-2 flex space-x-2">
+                        <button id="openServiceModal2" class="bg-blue-100 text-blue-600 px-2 py-1 text-sm rounded">Add Passenger</button>
+                        <button class="bg-red-100 text-red-600 px-2 py-1 text-sm rounded">Close Quota</button>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <p class="text-gray-600 text-sm">Trip to Kediri</p>
+                    <p class="text-gray-800">20 Passenger</p>
+                    <p class="text-gray-600 text-sm">Departure Date</p>
+                    <p class="text-gray-800">25 Jul 2020</p>
+                    <p class="text-gray-600 text-sm">Time</p>
+                    <p class="text-gray-800">11:00</p>
+                    <div class="mt-2 flex space-x-2">
+                        <button id="openServiceModal3" class="bg-blue-100 text-blue-600 px-2 py-1 text-sm rounded">Add Passenger</button>
+                        <button class="bg-red-100 text-red-600 px-2 py-1 text-sm rounded">Close Quota</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-64 bg-white shadow-md p-4">
+            <div class="flex items-center mb-4">
+                <input type="text" placeholder="Search keyword" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <svg class="w-5 h-5 text-gray-400 absolute right-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+            </div>
+            <div class="flex items-center mb-4">
+                <img src="image/jonatan.png" alt="Profile" class="w-10 h-10 rounded-full mr-2">
+                <div>
+                    <h3 class="text-gray-800 font-semibold">Hello, Jonathan!</h3>
+                    <p class="text-gray-600 text-sm">copy your bio link and paste in your profile to let people find you</p>
+                </div>
+            </div>
+            <div class="space-y-3">
+                <div class="bg-pink-50 p-4 rounded-lg flex items-center gap-3">
+                    <div class="w-8 h-8 bg-pink-200 rounded-full flex items-center justify-center">
+                        <svg class="h-5 w-5 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-gray-800 font-semibold">Booking Reminder</p>
+                        <p class="text-gray-500 text-sm">Lorem ipsum dolor sit amet, consectetur.</p>
+                    </div>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-lg flex items-center gap-3">
+                    <div class="w-8 h-8 bg-blue-200 rounded-full flex items-center justify-center">
+                        <svg class="h-5 w-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l9-6 9 6v12a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-gray-800 font-semibold">New Message</p>
+                        <p class="text-gray-500 text-sm">Lorem ipsum dolor sit amet, consectetur.</p>
+                    </div>
+                </div>
+                <div class="bg-yellow-50 p-4 rounded-lg flex items-center gap-3">
+                    <div class="w-8 h-8 bg-yellow-200 rounded-full flex items-center justify-center">
+                        <svg class="h-5 w-5 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-gray-800 font-semibold">Upcoming Booking</p>
+                        <p class="text-gray-500 text-sm">Lorem ipsum dolor sit amet, consectetur.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div id="serviceModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+        <div class="bg-white rounded-lg shadow-lg w-full max-w-md p-6">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-xl font-semibold text-gray-800">Add New Service</h2>
+                <button id="closeServiceModalBtn" class="text-gray-600 hover:text-gray-800">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+            <form id="serviceForm" class="space-y-4">
+                <div>
+                    <label for="destination" class="block text-gray-600 text-sm mb-1">Destination</label>
+                    <input type="text" id="destination" placeholder="Enter destination" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div>
+                    <label for="passengerCount" class="block text-gray-600 text-sm mb-1">Passenger Count</label>
+                    <input type="number" id="passengerCount" placeholder="Enter passenger count" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div>
+                    <label for="departureDate" class="block text-gray-600 text-sm mb-1">Departure Date</label>
+                    <input type="date" id="departureDate" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div>
+                    <label for="departureTime" class="block text-gray-600 text-sm mb-1">Departure Time</label>
+                    <input type="time" id="departureTime" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="flex justify-end space-x-3">
+                    <button type="button" id="cancelServiceBtn" class="px-4 py-2 border border-gray-300 text-gray-600 rounded-lg hover:bg-gray-100">Cancel</button>
+                    <button type="submit" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">Add Service</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript to Toggle Modal -->
+    <script>
+        // Service Modal
+        const openServiceModalBtns = document.querySelectorAll('[id^="openServiceModal"]');
+        const closeServiceModalBtn = document.getElementById('closeServiceModalBtn');
+        const cancelServiceBtn = document.getElementById('cancelServiceBtn');
+        const serviceModal = document.getElementById('serviceModal');
+
+        openServiceModalBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                serviceModal.classList.remove('hidden');
+            });
+        });
+
+        closeServiceModalBtn.addEventListener('click', () => {
+            serviceModal.classList.add('hidden');
+        });
+
+        cancelServiceBtn.addEventListener('click', () => {
+            serviceModal.classList.add('hidden');
+        });
+
+        // Close modal when clicking outside of it
+        serviceModal.addEventListener('click', (e) => {
+            if (e.target === serviceModal) {
+                serviceModal.classList.add('hidden');
+            }
+        });
+
+        // Form submission (example logic)
+        const serviceForm = document.getElementById('serviceForm');
+        serviceForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const destination = document.getElementById('destination').value;
+            const passengerCount = document.getElementById('passengerCount').value;
+            const departureDate = document.getElementById('departureDate').value;
+            const departureTime = document.getElementById('departureTime').value;
+
+            console.log('New Service Added:', { destination, passengerCount, departureDate, departureTime });
+            serviceModal.classList.add('hidden');
+            serviceForm.reset();
+        });
+    </script>
+</body>
+</html>
